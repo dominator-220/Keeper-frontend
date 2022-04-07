@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.notefont {
+	font-family: 'Montserrat', sans-serif;
+	box-shadow: 1px 1px 5px 0px !important;
+}
+
+.noteheading {
+	font-weight: bold !important;
+}

@@ -1,0 +1,14 @@
+.backdrop {
+	position: fixed;
+	top: 0;
+	height: 100vh;
+	left: 0;
+	width: 100vw;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+
+

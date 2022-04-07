@@ -1,0 +1,23 @@
+.customformbutton {
+	border-color: #f5ba13 !important;
+	color: #f5ba13 !important;
+}
+
+.customformbutton:hover {
+	border-color: white !important;
+	color: white !important;
+	background-color: #f5ba13 !important;
+}
+
+.formswitchlinks {
+	color: #f5ba13;
+	font-size: 1.5rem;
+	font-weight: bold;
+	font-family: cursive;
+	text-decoration: none;
+}
+
+.formswitchlinks:hover {
+	text-decoration: none;
+	color: brown;
+}
