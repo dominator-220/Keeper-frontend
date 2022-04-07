@@ -8,6 +8,8 @@ import Loading from '../Loading/Loading';
 const NoteList = (props) => {
 	const [notes, setNotes] = useState([]);
 	const [spinner, setSpinner] = useState(false);
+	const [message, setMessage] = useState(false);
+	const [resperror, setResperror] = useState(false);
 	const [addModa, setAddModa] = useState(false);
 
 	useEffect(() => {
@@ -36,6 +38,7 @@ const NoteList = (props) => {
 			response = await axios.get('https://my-keeper-backend-clone.herokuapp.com/api/note/all', options);
 		} catch (err) {
 			setSpinner(false);
+			console.log(message);
 			setMessage(false);
 			setResperror(`${err.response.data.message}`);
 			console.log(err.response.data.message);
@@ -52,6 +55,7 @@ const NoteList = (props) => {
 			console.log(response);
 			setSpinner(false);
 			setResperror(`${response.data.message}`);
+			console.log(resperror)
 		}
 	};
 
