@@ -7,7 +7,6 @@ import Loading from '../Loading/Loading';
 
 import styles from './Login.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Axios from 'axios';
 
 const Signup = () => {
 	const { handleSubmit, register, errors, watch } = useForm();

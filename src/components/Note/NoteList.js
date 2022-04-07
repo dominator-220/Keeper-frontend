@@ -8,8 +8,6 @@ import Loading from '../Loading/Loading';
 const NoteList = (props) => {
 	const [notes, setNotes] = useState([]);
 	const [spinner, setSpinner] = useState(false);
-	const [message, setMessage] = useState(false);
-	const [resperror, setResperror] = useState(false);
 	const [addModa, setAddModa] = useState(false);
 
 	useEffect(() => {

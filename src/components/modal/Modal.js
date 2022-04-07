@@ -3,17 +3,9 @@ import { useForm } from 'react-hook-form';
 import styles from './Modal.module.css';
 import { getCookie } from '../helper/auth';
 import axios from 'axios';
-import { useHistory } from 'react-router-dom';
 import Loading from '../Loading/Loading';
 
 const Modal = (props) => {
-	let getType = () => {
-		if (props.edit) {
-			return 'yellow';
-		} else if (props.delete) {
-			return '#CC0000';
-		}
-	};
 	const { handleSubmit, register, errors } = useForm();
 	const [spinner, setSpinner] = useState(false);
 	const onSubmit = async (values, e) => {

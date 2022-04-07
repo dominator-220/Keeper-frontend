@@ -1,6 +1,5 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useContext } from 'react';
 import { Link, useHistory } from 'react-router-dom';
-import { authenticate, removeCookie } from './helper/auth';
 import { AuthContext } from './context/auth-context';
 
 function Header(props) {
