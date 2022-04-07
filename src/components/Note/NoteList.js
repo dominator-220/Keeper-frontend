@@ -18,7 +18,7 @@ const NoteList = (props) => {
 			showAllNotes();
 		} else {
 		}
-	}, [props.isLoggedIn, showAllNotes]);
+	}, [props.isLoggedIn]);
 
 	const closeModal = () => {
 		setAddModa(false);
