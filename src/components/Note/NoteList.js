@@ -18,7 +18,7 @@ const NoteList = (props) => {
 			showAllNotes();
 		} else {
 		}
-	}, [props.isLoggedIn]);
+	}, [props.isLoggedIn, showAllNotes]);
 
 	const closeModal = () => {
 		setAddModa(false);
@@ -38,7 +38,7 @@ const NoteList = (props) => {
 			response = await axios.get('https://my-keeper-backend-clone.herokuapp.com/api/note/all', options);
 		} catch (err) {
 			setSpinner(false);
-			console.log(message);
+			console.log(message)
 			setMessage(false);
 			setResperror(`${err.response.data.message}`);
 			console.log(err.response.data.message);
